@@ -1,19 +1,19 @@
-## Android 组件间通信框架 ApiManager
+# Android 组件间通信框架 ApiManager
 
 ## 项目介绍
 
 ApiManager 是一款简单易用、安全高效组件间通信框架，支持组件间以暴露接口提供服务的方式进行通信，帮助组件化架构的实现。
 
 ## 设计特点
-#### 1. 自动注册
+### 1. 自动注册
 
 使用注解在编译阶段生成服务接口与实现的映射注册帮助类，获取服务时自动使用帮助类完成注册，不必手动调用注册方法。
 
-#### 2. 按需加载
+### 2. 按需加载
 
 第一次获取服务时，用反射生成映射注册帮助类的实例，再返回实现的实例。
 
-#### 3. 空安全
+### 3. 空安全
 
 无服务实现注册时，使用空对象模式 + 动态代理的设计提前暴露调用错误，防止空指针异常。
 
@@ -21,11 +21,11 @@ ApiManager 是一款简单易用、安全高效组件间通信框架，支持组
 
 这里主要以 *example* 中的代码进行说明
 
-##### 1. 在基础组件中配置，见 :example:base Module
+**1. 在基础组件中配置**，见 :example:base Module
 
 
 
-##### 2. 在基础组件中定义接口，如 IUserApi.java，见 :example:base Module
+**2. 在基础组件中定义接口**，如 IUserApi.java，见 :example:base Module
 
 ```java
 package com.moer.base;
@@ -40,12 +40,12 @@ public interface IUserApi extends IApi {
 }
 ```
 
-##### 3. 在提供服务的组件中配置，见 :example:user Module
+**3. 在提供服务的组件中配置**，见 :example:user Module
 
 
 
 
-##### 4. 在提供服务的组件中定义实现，注意使用 ApiImpl 注解，见 :example:user Module
+**4. 在提供服务的组件中定义实现**，注意使用 ApiImpl 注解，见 :example:user Module
 
 ```java
 package com.moer.module;
@@ -69,7 +69,7 @@ public class UserApiImpl implements IUserApi {
 }
 ```
 
-##### 5. 使用服务的组件中获取实例，见 :example:app_or_library Module
+**5. 使用服务的组件中获取实例**，见 :example:app_or_library Module
 
 
 ```java
