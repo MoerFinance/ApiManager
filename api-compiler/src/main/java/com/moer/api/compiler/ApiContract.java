@@ -1,4 +1,4 @@
-package com.moer.api.complier;
+package com.moer.api.compiler;
 
 public class ApiContract<T> {
     private T api;

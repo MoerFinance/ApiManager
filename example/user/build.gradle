@@ -33,5 +33,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     implementation project(':example:base')
-    annotationProcessor 'com.moer.api:api-complier:1.0.0'
+    annotationProcessor 'com.moer.api:api-compiler:1.0.0'
 }

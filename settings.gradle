@@ -1,2 +1,2 @@
 include 'example:app', ':example:base', ':example:user', ':example:app_or_library'
-include ':api-complier', ':api-manager'
+include ':api-compiler', ':api-manager'

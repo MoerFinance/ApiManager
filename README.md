@@ -53,7 +53,7 @@ public interface IUserApi extends IApi {
 //build.gradle
 dependencies {
     //...
-    annotationProcessor 'com.moer.api:api-complier:1.0.0'
+    annotationProcessor 'com.moer.api:api-compiler:1.0.0'
 }
 ```
 

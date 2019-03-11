@@ -2,7 +2,7 @@ apply plugin: 'java'
 
 jar {
     manifest {
-        attributes 'Implementation-Title': 'api-complier',
+        attributes 'Implementation-Title': 'api-compiler',
                 'Implementation-Version': '1.0.0'
     }
 }

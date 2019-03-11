@@ -1,4 +1,4 @@
-package com.moer.api.complier;
+package com.moer.api.compiler;
 
 import com.google.auto.service.AutoService;
 import com.moer.api.ApiConstants;
