@@ -5,6 +5,7 @@
 ApiManager 是一款简单易用、安全高效组件间通信框架，支持组件间以暴露接口提供服务的方式进行通信，帮助组件化架构的实现。
 
 ## 设计特点
+
 ### 1. 自动注册
 
 使用注解在编译阶段生成服务接口与实现的映射注册帮助类，获取服务时自动使用帮助类完成注册，不必手动调用注册方法。
@@ -23,7 +24,13 @@ ApiManager 是一款简单易用、安全高效组件间通信框架，支持组
 
 **1. 在基础组件中配置**，见 :example:base Module
 
-
+```groovy
+//build.gradle
+dependencies {
+    //...
+    api 'com.moer.api:api-manager:1.0.0'
+}
+```
 
 **2. 在基础组件中定义接口**，如 IUserApi.java，见 :example:base Module
 
@@ -42,8 +49,13 @@ public interface IUserApi extends IApi {
 
 **3. 在提供服务的组件中配置**，见 :example:user Module
 
-
-
+```groovy
+//build.gradle
+dependencies {
+    //...
+    annotationProcessor 'com.moer.api:api-complier:1.0.0'
+}
+```
 
 **4. 在提供服务的组件中定义实现**，注意使用 ApiImpl 注解，见 :example:user Module
 
@@ -113,4 +125,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+## 其他
 
+欢迎各种 star，谢谢支持！
