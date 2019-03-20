@@ -127,4 +127,4 @@ limitations under the License.
 ```
 ## 其他
 
-欢迎各种 star，谢谢支持！
+欢迎各种 star、PR，谢谢支持！
